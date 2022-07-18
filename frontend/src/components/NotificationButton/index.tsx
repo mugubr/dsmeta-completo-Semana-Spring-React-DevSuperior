@@ -10,10 +10,15 @@ type Props = {
   saleId: number;
 }
 
+function reload() {
+  window.location.reload
+}
+
 function handleClick(id: number) {
   axios(`${BASE_URL}/sales/${id}/notification`)
     .then(response => {
       toast.info("SMS enviado com sucesso");
+      reload()
     });
 }
 
