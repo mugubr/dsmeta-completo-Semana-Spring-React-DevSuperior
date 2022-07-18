@@ -1,3 +1,4 @@
+import React from 'react'
 import Header from "./components/Header";
 import SalesCard from "./components/SalesCard";
 import { ToastContainer } from 'react-toastify';
